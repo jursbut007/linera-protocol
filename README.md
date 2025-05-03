@@ -130,3 +130,6 @@ linera query-balance "$CHAIN2:$ACCOUNT2"
 
 More complex examples may be found in our [developer manual](https://linera.dev) as well
 as the [example applications](./examples) in this repository.
+# Now let's fund the user balances.
+linera transfer 5 --from "$CHAIN1" --to "$CHAIN1:$ACCOUNT1"
+linera transfer 2 --from "$CHAIN1:$ACCOUNT1" --to "$CHAIN2:$ACCOUNT2"
